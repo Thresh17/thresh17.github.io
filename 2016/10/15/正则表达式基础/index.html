@@ -37,7 +37,7 @@
     
     <title>
         
-            dsq | 
+            正则表达式基础 | 
         
         只有好看的你能进来
     </title>
@@ -231,18 +231,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="dsq | 只有好看的你能进来">
+    <meta property="og:title" content="正则表达式基础 | 只有好看的你能进来">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="">
     
 
     
         <meta property="article:published_time" content="Sat Oct 15 2016 16:30:15 GMT+0800" />
-        <meta property="article:modified_time" content="Wed Nov 15 2017 19:44:25 GMT+0800" />
+        <meta property="article:modified_time" content="Wed Nov 15 2017 19:52:03 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="dsq | 只有好看的你能进来">
+    <meta name="twitter:title" content="正则表达式基础 | 只有好看的你能进来">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -263,9 +263,9 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "mainEntityOfPage": "http://yoursite.com/2016/10/15/正则表达式基础/index.html",
-    "headline": "dsq",
+    "headline": "正则表达式基础",
     "datePublished": "Sat Oct 15 2016 16:30:15 GMT+0800",
-    "dateModified": "Wed Nov 15 2017 19:44:25 GMT+0800",
+    "dateModified": "Wed Nov 15 2017 19:52:03 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "John Doe",
@@ -343,6 +343,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-概念"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.概念</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#给定一个正则表达式和另一个字符串，我们可以达到如下的目的："><span class="post-toc-number">2.0.0.1.</span> <span class="post-toc-text">给定一个正则表达式和另一个字符串，我们可以达到如下的目的：</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-正则表达式的特点是："><span class="post-toc-number">3.</span> <span class="post-toc-text">3.正则表达式的特点是：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-正则表达式对象"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.正则表达式对象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-使用正则表达式进行匹配"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.使用正则表达式进行匹配</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常用的正则元字符"><span class="post-toc-number">6.</span> <span class="post-toc-text">常用的正则元字符</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-基本元字符"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">1.基本元字符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-转义字符-‘-’"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">2.转义字符 ‘\’</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-限定元字符"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">3.限定元字符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-首尾正则表达式"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">4.首尾正则表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-简写元字符"><span class="post-toc-number">6.5.</span> <span class="post-toc-text">5.简写元字符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-否定元字符"><span class="post-toc-number">6.6.</span> <span class="post-toc-text">6.否定元字符</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-提取"><span class="post-toc-number">6.7.</span> <span class="post-toc-text">7.提取</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-字符串的替换"><span class="post-toc-number">6.8.</span> <span class="post-toc-text">8.字符串的替换</span></a></li></ol></li></ol>
+    </ul>
+    
 
 
 
@@ -372,7 +381,7 @@
         
     
             <p class="article-headline-p">
-                dsq
+                正则表达式基础
             </p>
         </div>
 
@@ -423,7 +432,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=dsq&url=http://yoursite.com/2016/10/15/正则表达式基础/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=正则表达式基础&url=http://yoursite.com/2016/10/15/正则表达式基础/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -432,7 +441,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=dsq&url=http://yoursite.com/2016/10/15/正则表达式基础/index.html&via=John Doe" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=正则表达式基础&url=http://yoursite.com/2016/10/15/正则表达式基础/index.html&via=John Doe" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -475,16 +484,13 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>#正则表达式基础</p>
-<p>##1.简介<br>   正则表达式：Regular Expression，在代码中常简写为regex、regexp或RE,正则表达式就是 一个用于查找的 含有 匹配字符串 或 匹配元字符的 字符串. 比如在表单验证中就大量使用了正则.</p>
-<p>##2.概念<br>   正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑.</p>
-<p>#####给定一个正则表达式和另一个字符串，我们可以达到如下的目的：</p>
-<pre><code>1. 给定的字符串是否符合正则表达式的过滤逻辑（称作“匹配”）.
+        <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>   正则表达式：Regular Expression，在代码中常简写为regex、regexp或RE,正则表达式就是 一个用于查找的 含有 匹配字符串 或 匹配元字符的 字符串. 比如在表单验证中就大量使用了正则.</p>
+<h2 id="2-概念"><a href="#2-概念" class="headerlink" title="2.概念"></a>2.概念</h2><p>   正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑.</p>
+<h5 id="给定一个正则表达式和另一个字符串，我们可以达到如下的目的："><a href="#给定一个正则表达式和另一个字符串，我们可以达到如下的目的：" class="headerlink" title="给定一个正则表达式和另一个字符串，我们可以达到如下的目的："></a>给定一个正则表达式和另一个字符串，我们可以达到如下的目的：</h5><pre><code>1. 给定的字符串是否符合正则表达式的过滤逻辑（称作“匹配”）.
 2. 可以通过正则表达式，从字符串中获取我们想要的特定部分.
-</code></pre><p>##3.正则表达式的特点是：</p>
-<pre><code>1. 灵活性、逻辑性和功能性非常强.
+</code></pre><h2 id="3-正则表达式的特点是："><a href="#3-正则表达式的特点是：" class="headerlink" title="3.正则表达式的特点是："></a>3.正则表达式的特点是：</h2><pre><code>1. 灵活性、逻辑性和功能性非常强.
 2. 可以迅速地用极简单的方式达到字符串的复杂控制.
-</code></pre><p>##4.正则表达式对象<br>   js 正则表达式对象就是由 正则表达式创建的对象, 该对象可以进行 匹配, 提取 和 替换.</p>
+</code></pre><h2 id="4-正则表达式对象"><a href="#4-正则表达式对象" class="headerlink" title="4.正则表达式对象"></a>4.正则表达式对象</h2><p>   js 正则表达式对象就是由 正则表达式创建的对象, 该对象可以进行 匹配, 提取 和 替换.</p>
 <p>   <strong>创建正则表达式对象</strong></p>
 <p>1) 构造函数</p>
 <pre><code>var regex = new RegExp( 正则表达式字符串[, 匹配模式] );
@@ -505,7 +511,10 @@
       var regex2 = /abc/;
   &lt;/script&gt;
 &lt;/html&gt;
-</code></pre><p>##5.使用正则表达式进行匹配<br>    语法:<br>        正则对象.test( 字符串 ) -&gt; 返回的是布尔值<br>        如果参数字符串中含有符合正则匹配的子字符串, 就返回 true, 否则返回 false<br> 例:</p>
+</code></pre><h2 id="5-使用正则表达式进行匹配"><a href="#5-使用正则表达式进行匹配" class="headerlink" title="5.使用正则表达式进行匹配"></a>5.使用正则表达式进行匹配</h2><pre><code>语法:
+    正则对象.test( 字符串 ) -&gt; 返回的是布尔值
+    如果参数字符串中含有符合正则匹配的子字符串, 就返回 true, 否则返回 false
+</code></pre><p> 例:</p>
 <pre><code> &lt;!DOCTYPE html&gt;
  &lt;html lang=&quot;en&quot;&gt;
  &lt;head&gt;
@@ -540,9 +549,10 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
 &lt;/script&gt;
 &lt;/html&gt;
 </code></pre><p>通过这个例子我们可以看出通过正则来匹配查找比传统字符串操作更加便捷.</p>
-<p>##常用的正则元字符</p>
-<p>###1.基本元字符<br>    1) “. (点)”<br>      表示任一个非换行的字符</p>
-<pre><code>2) &quot;()&quot;
+<h2 id="常用的正则元字符"><a href="#常用的正则元字符" class="headerlink" title="常用的正则元字符"></a>常用的正则元字符</h2><h3 id="1-基本元字符"><a href="#1-基本元字符" class="headerlink" title="1.基本元字符"></a>1.基本元字符</h3><pre><code>1) &quot;. (点)&quot;
+  表示任一个非换行的字符
+
+2) &quot;()&quot;
   表示分组和提高优先级    
 
 3) &quot;[]&quot;
@@ -555,9 +565,20 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
     foot或food
     foot|food
     foo(t|d)
-</code></pre><p>###2.转义字符 ‘\’<br>    表示点:     .<br>    表示[]:     [  ]<br>    表示():      (  )<br>    表示\ :     \</p>
-<p>###3.限定元字符<br>    1)”<em>“<br>     紧跟前面的一个字符或一组字符出现 0 次到多次<br>     例:<br>        表示: 12后面很多3()<br>        123</em><br>        12          0次<br>        123            1次<br>        1233        2次</p>
-<pre><code>2)&quot;+&quot;
+</code></pre><h3 id="2-转义字符-‘-’"><a href="#2-转义字符-‘-’" class="headerlink" title="2.转义字符 ‘\’"></a>2.转义字符 ‘\’</h3><pre><code>表示点:     \.
+表示[]:     \[  \]
+表示():      \(  \)
+表示\ :     \\
+</code></pre><h3 id="3-限定元字符"><a href="#3-限定元字符" class="headerlink" title="3.限定元字符"></a>3.限定元字符</h3><pre><code>1)&quot;*&quot;
+ 紧跟前面的一个字符或一组字符出现 0 次到多次
+ 例:
+    表示: 12后面很多3()
+    123*
+    12          0次
+    123            1次
+    1233        2次
+
+2)&quot;+&quot;
  紧跟在前面的字符出现 1 次到多次
 
 3)&quot;?&quot;
@@ -571,8 +592,14 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
 
 6)&quot;{数字,数字}&quot;
  紧跟在前面的字符出现的次数范围
-</code></pre><p>###4.首尾正则表达式<br>    1)”^”<br>     表示必须以 xxx 开头<br>     例:<br>        ^a     必须以 a 开头的字符串<br>     注意:<br>        ^a^a   非法的写法, ^ 如果是表示开头必须写在开头, 而且只能写一个</p>
-<pre><code>2)&quot;$&quot;
+</code></pre><h3 id="4-首尾正则表达式"><a href="#4-首尾正则表达式" class="headerlink" title="4.首尾正则表达式"></a>4.首尾正则表达式</h3><pre><code>1)&quot;^&quot;    
+ 表示必须以 xxx 开头    
+ 例:
+    ^a     必须以 a 开头的字符串
+ 注意:
+    ^a^a   非法的写法, ^ 如果是表示开头必须写在开头, 而且只能写一个
+
+2)&quot;$&quot;
  表示必须以 xxx 结尾
  例:
     a$       必须以 a 结尾
@@ -589,8 +616,9 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
         0|1|2|3|4|5|6|7|8|9|x
 
 所以:   ^[0-9]{17}[0-9x]$
-</code></pre><p>###5.简写元字符<br>    1) \s    空白字符, 包括空格, tab, 回车换行等</p>
-<pre><code>2) \S     非空白字符 js中常常使用 [\s\S] 表示任意字符
+</code></pre><h3 id="5-简写元字符"><a href="#5-简写元字符" class="headerlink" title="5.简写元字符"></a>5.简写元字符</h3><pre><code>1) \s    空白字符, 包括空格, tab, 回车换行等
+
+2) \S     非空白字符 js中常常使用 [\s\S] 表示任意字符
 
 
 3) \w    表示字符, 包含字母, 数字, 下划线.
@@ -600,9 +628,12 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
 5) \d   数字
 
 6) \D     非数字
-</code></pre><p>###6.否定元字符<br>    语法:<br>        [^字符]<br>        不为这些字符的字符</p>
-<pre><code>[^abc]        不是 a 也不是 b 也不是 c 的字符
-</code></pre><p>###7.提取<br>  使用正则表达式可以进行匹配, 使用 exec 可以将匹配到的数据提取出来</p>
+</code></pre><h3 id="6-否定元字符"><a href="#6-否定元字符" class="headerlink" title="6.否定元字符"></a>6.否定元字符</h3><pre><code>语法:
+    [^字符]
+    不为这些字符的字符
+
+    [^abc]        不是 a 也不是 b 也不是 c 的字符
+</code></pre><h3 id="7-提取"><a href="#7-提取" class="headerlink" title="7.提取"></a>7.提取</h3><p>  使用正则表达式可以进行匹配, 使用 exec 可以将匹配到的数据提取出来</p>
 <pre><code>语法:
     正则表达式对象.exec( 字符串 ) -&gt; 封装成数组    
 
@@ -626,8 +657,13 @@ for ( var i = 0; i &lt; str.length - search.length; i++ ) {
 
     &lt;/script&gt;
     &lt;/html&gt;
-</code></pre><p>###8.字符串的替换<br>    语法:<br>        字符串.replace( 查找字符串, 替换字符串 ) -&gt; 字符串<br>    1)字符串替换方法<br>        字符串1.replace( 字符串2, 字符串3 )<br>        在 字符串1 中找到 字符串2, 将其替换成 字符串3, 返回替换后的字符串</p>
-<pre><code>    特点: 只替换第一个找到的字符串
+</code></pre><h3 id="8-字符串的替换"><a href="#8-字符串的替换" class="headerlink" title="8.字符串的替换"></a>8.字符串的替换</h3><pre><code>语法:
+    字符串.replace( 查找字符串, 替换字符串 ) -&gt; 字符串
+1)字符串替换方法
+    字符串1.replace( 字符串2, 字符串3 )
+    在 字符串1 中找到 字符串2, 将其替换成 字符串3, 返回替换后的字符串
+
+    特点: 只替换第一个找到的字符串
 
     &quot;aaa&quot;.replace( &apos;a&apos;, &apos;A&apos; ) -&gt; &apos;Aaa&apos;
 
